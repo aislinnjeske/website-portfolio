@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.heart{
+    width:100px;
+    height:100px;
+    background:purple; 
+    position: relative;
+    transform: rotate(-45deg) scale(1);
+    cursor: pointer;
+    animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: rotate(-45deg) scale(1);
+    }
+
+    10% {
+        transform: rotate(-45deg) scale(1.1);
+    }
+
+}
+
+
+.heart::after{
+    width:100px;
+    height:100px;
+    background:inherit; 
+    content:'';
+    position: absolute;
+    top:-50%;
+    left:0;
+    border-radius: 50%;
+}
+
+.heart::before{
+    width:100px;
+    height:100px;
+    background:inherit; 
+    content:'';
+    position: absolute;
+    top:0;
+    right:-50%;
+    border-radius: 50%;
+}

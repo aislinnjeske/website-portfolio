@@ -7,7 +7,7 @@ function HelloWorld() {
   return (
     <div className="Hello">
       <header className="Hello-header">
-        <p>Website is in development! Please be patient I have the smallest grasp on React</p>
+        <p>Website is in development! Please be patient </p>
         <img src={time} className="App-logo" alt="time" />
       </header>
     </div>

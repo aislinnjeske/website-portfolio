@@ -24,10 +24,6 @@
     color: white;
   }
   
-  .Hello-link {
-    color: #61dafb;
-  }
-  
   @keyframes Hello-logo-spin {
     from {
       transform: rotate(0deg);
